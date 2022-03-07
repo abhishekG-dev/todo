@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./todo.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="container">
+            <div class="header_img"></div>
+            <div class="todo_main_container">
+                <div class="todo_container">
+                <!-- head -->
+                    <div class="head">
+                        <h1>TODO</h1>
+                        <div class="theme_switch">
+                            <img src="./image/icon-moon.svg" alt="moon_icon">
+                        </div>
+                    </div>
+                    <!-- head end -->
+
+                    <!-- input container -->
+                    <div class="input_container">
+                        <!-- <div class="check_con"></div> -->
+                        <form name="todo_input" class="form_input">
+                            <input name ="todo" type="text" placeholder="Create a new todo...">
+                        </form> 
+                    </div>
+                    <!-- input end -->
+
+                    <!-- todo list body -->
+                    <div class="todo_list_container">
+                        
+                        <!-- main list  -->
+                        <div class="todo_list">
+                            <ul class="todo_main_list" >
+                                <span class="no_task">NO TASK</span>
+                            </ul>
+                        </div>
+                        <!-- main body end -->
+                        
+                        <!-- buttons -->
+                         <div class="to_foot">
+                             <div class="total_item">
+                                 <p><span class="todo_count">0</span> items left</p>
+                               </div>
+                             <div class="options">
+                                 <button class="all_todos op_btn">All</button>
+                                 <button class="active_todos op_btn" >Active</button>
+                                 <button class="completed_todos op_btn" >Completed</button>
+                             </div>
+                             <div class="c_c">
+                                 <!-- <p>Clear Complete</p> -->
+                                 <button class="clear" >Clear Completed</button>
+                             </div>
+                         </div>
+                         <!-- button end -->
+                    
+                    </div>
+                    <!-- todo list body end -->
+                    <!-- for mobile view -->
+                 <div class="option_m_view">
+                     <div class="op_container">
+                         <button class="all_m_todos op_m_btn">All</button>
+                         <button class="active_m_todos op_m_btn" >Active</button>
+                         <button class="completed_m_todos op_m_btn" >Completed</button>
+                     </div>
+
+                </div>
+                </div>
+                
+    </div>
+</div>
+        <script src="./todo.js"></script>
+</body>
+</html>
